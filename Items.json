@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Peas",
+    "price": 0.95,
+    "currency": "USD"
+  },
+  {
+    "name": "Eggs",
+    "price": 2.10,
+    "currency": "USD"
+  },
+  {
+    "name": "Milk",
+    "price": 1.30,
+    "currency": "USD"
+  },
+  {
+    "name": "Beans",
+    "price": 0.73,
+    "currency": "USD"
+  }
+]
