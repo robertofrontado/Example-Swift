@@ -8,7 +8,7 @@
 
 class BaseRepository {
 
-  let api: API
+  internal let api: API
 
   init(api: API) {
     self.api = api

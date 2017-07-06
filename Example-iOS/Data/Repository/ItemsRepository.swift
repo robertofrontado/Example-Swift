@@ -11,5 +11,9 @@ class ItemsRepository: BaseRepository {
   override init(api: API) {
     super.init(api: api)
   }
+
+  func getItems(onCompletion: @escaping (_ items: [Item], _ error: Error?) -> Void) {
+    api.getItems(onCompletion: onCompletion)
+  }
   
 }
