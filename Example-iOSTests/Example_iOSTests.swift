@@ -6,10 +6,11 @@
 //  Copyright © 2017 Roberto Frontado. All rights reserved.
 //
 
-import XCTest
+import Quick
+import Nimble
 @testable import Example_iOS
 
-class Example_iOSTests: XCTestCase {
+class Example_iOSTests: QuickSpec {
     
     override func setUp() {
         super.setUp()
