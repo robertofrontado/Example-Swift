@@ -19,6 +19,7 @@
 		A221625A1F0ED92100EAAF08 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162591F0ED92100EAAF08 /* BasePresenter.swift */; };
 		A221625C1F0ED92700EAAF08 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221625B1F0ED92700EAAF08 /* BaseView.swift */; };
 		A22162601F0EDAE000EAAF08 /* UIApplication+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221625F1F0EDAE000EAAF08 /* UIApplication+TopViewController.swift */; };
+		A22162641F0EDC2C00EAAF08 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22162631F0EDC2C00EAAF08 /* Home.storyboard */; };
 		A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DB91F0EB77200055B2F /* AppDelegate.swift */; };
 		A2938DBF1F0EB77200055B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2938DBD1F0EB77200055B2F /* Main.storyboard */; };
 		A2938DC11F0EB77200055B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2938DC01F0EB77200055B2F /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		A22162591F0ED92100EAAF08 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		A221625B1F0ED92700EAAF08 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		A221625F1F0EDAE000EAAF08 /* UIApplication+TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopViewController.swift"; sourceTree = "<group>"; };
+		A22162631F0EDC2C00EAAF08 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A2938DB61F0EB77200055B2F /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2938DB91F0EB77200055B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		A2938DBE1F0EB77200055B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		A221624E1F0ED79B00EAAF08 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A22162631F0EDC2C00EAAF08 /* Home.storyboard */,
 				A22162501F0ED8E400EAAF08 /* HomeViewController.swift */,
 				A22162521F0ED8EB00EAAF08 /* HomePresenter.swift */,
 				A22162541F0ED8F200EAAF08 /* HomeView.swift */,
@@ -367,6 +370,7 @@
 				A2938DC41F0EB77200055B2F /* LaunchScreen.storyboard in Resources */,
 				A2938DC11F0EB77200055B2F /* Assets.xcassets in Resources */,
 				A2938DBF1F0EB77200055B2F /* Main.storyboard in Resources */,
+				A22162641F0EDC2C00EAAF08 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
