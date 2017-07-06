@@ -28,6 +28,7 @@
 		A221627C1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221627B1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift */; };
 		A221627F1F0EE49000EAAF08 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221627E1F0EE49000EAAF08 /* SplashViewController.swift */; };
 		A22162851F0EE94E00EAAF08 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162841F0EE94E00EAAF08 /* Currency.swift */; };
+		A22162871F0EED7300EAAF08 /* CurrencyRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162861F0EED7300EAAF08 /* CurrencyRepositoryTest.swift */; };
 		A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DB91F0EB77200055B2F /* AppDelegate.swift */; };
 		A2938DBF1F0EB77200055B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2938DBD1F0EB77200055B2F /* Main.storyboard */; };
 		A2938DC11F0EB77200055B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2938DC01F0EB77200055B2F /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		A221627B1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsRepositoryTest.swift; sourceTree = "<group>"; };
 		A221627E1F0EE49000EAAF08 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A22162841F0EE94E00EAAF08 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		A22162861F0EED7300EAAF08 /* CurrencyRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRepositoryTest.swift; sourceTree = "<group>"; };
 		A2938DB61F0EB77200055B2F /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2938DB91F0EB77200055B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		A2938DBE1F0EB77200055B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				A221627B1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift */,
+				A22162861F0EED7300EAAF08 /* CurrencyRepositoryTest.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 			files = (
 				A221627A1F0EDE6000EAAF08 /* MockAPI.swift in Sources */,
 				A221627C1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift in Sources */,
+				A22162871F0EED7300EAAF08 /* CurrencyRepositoryTest.swift in Sources */,
 				A22162781F0EDDB900EAAF08 /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,8 +23,9 @@ class MockAPI: RestAPI {
     onCompletion(items, error)
   }
 
-  override func getCurrenciesConvertionRate() {
-
+  override func getCurrencyRate(fromCurrency: CurrencyType, toCurrency: CurrencyType, onCompletion: @escaping (Currency?, Error?) -> Void) {
+    let currency: Currency? = error == nil ? Mocks.getCurrencyEUR() : nil
+    onCompletion(currency, error)
   }
 
 }

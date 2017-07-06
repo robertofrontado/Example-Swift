@@ -12,4 +12,8 @@ class CurrencyRepository: BaseRepository {
     super.init(api: api)
   }
 
+  func getCurrencyRate(fromCurrency: CurrencyType, toCurrency: CurrencyType, onCompletion: @escaping (_ currency: Currency?, _ error: Error?) -> Void) {
+    api.getCurrencyRate(fromCurrency: fromCurrency, toCurrency: toCurrency, onCompletion: onCompletion)
+  }
+
 }

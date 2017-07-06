@@ -20,4 +20,13 @@ class Mocks {
     return [item, item, item]
   }
 
+  // MARK: - Currency
+  static func getCurrencyUSD() -> Currency {
+    return Currency(type: .USD, rate: 1)
+  }
+
+  static func getCurrencyEUR() -> Currency  {
+    return Currency(type: .EUR, rate: 0.8)
+  }
+
 }

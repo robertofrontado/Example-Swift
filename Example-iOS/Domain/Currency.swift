@@ -17,6 +17,7 @@ enum CurrencyType: String {
 struct Currency: Mappable {
 
   var type: CurrencyType?
+  var quotes: [String: Float]?
   var rate: Float?
 
   init(type: CurrencyType, rate: Float) {
@@ -30,6 +31,7 @@ struct Currency: Mappable {
 
   mutating func mapping(map: Map) {
     type <- map["type"]
-    rate <- map["quotes.0"]
+    quotes <- map["quotes"]
+    rate = quotes?.first?.value
   }
 }
