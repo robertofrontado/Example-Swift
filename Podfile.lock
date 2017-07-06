@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.5.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - Kingfisher (3.10.2)
+  - Nimble (7.0.1)
+  - ObjectMapper (2.2.7)
+  - OkDataSources (1.0.0):
+    - OkDataSources/Core (= 1.0.0)
+  - OkDataSources/Core (1.0.0)
+  - PKHUD (4.2.3)
+  - Quick (1.1.0)
+  - Swinject (2.1.0)
+  - SwinjectStoryboard (1.1.1):
+    - Swinject (~> 2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - AlamofireObjectMapper (~> 4.0)
+  - Kingfisher
+  - Nimble
+  - ObjectMapper
+  - OkDataSources
+  - PKHUD (~> 4.0)
+  - Quick
+  - Swinject
+  - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
+  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  OkDataSources: 6cd802edc76b081a3651e408c0b54ccade34daf6
+  PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  Swinject: 85e468ac75c5c2d234076f98c591d57d56bc64bc
+  SwinjectStoryboard: 4c71c25f312322844d39ee06f0f523db7b9b10a3
+
+PODFILE CHECKSUM: 9745e3c911849e5d202e89268af340ce571de94a
+
+COCOAPODS: 1.2.1
