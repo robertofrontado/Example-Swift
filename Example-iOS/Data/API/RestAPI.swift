@@ -19,35 +19,23 @@ class RestAPI: API {
       })
   }
 
-  func getCurrenciesConvertionRate() {
-//    access_key=b0a0d32b0204834af37d2c40ec68d6e3&currencies=EUR,GBP,CAD,PLN&source=USD&format=1
-//    Alamofire.request("http://apilayer.net/api/live",
-//                      method: .get,
-//                      param)
+  func getCurrencyRate(fromCurrency: CurrencyType, toCurrency: CurrencyType, onCompletion: @escaping (_ currency: Currency?, _ error: Error?) -> Void) {
+    let parameters = [
+      "access_key": "b0a0d32b0204834af37d2c40ec68d6e3",
+      "currencies": toCurrency.rawValue,
+      "source": fromCurrency.rawValue
+    ]
+
+    Alamofire.request("http://apilayer.net/api/live",
+                      method: .get,
+                      parameters: parameters)
+      .responseObject { (response: DataResponse<Currency>) in
+      var currency = response.result.value
+      currency?.type = toCurrency
+      onCompletion(currency, response.result.error)
+    }
   }
 
 }
 
 
-struct CurrencyRate {
-
-  var quotes: [String: Float]
-//  {
-//  "success":true,
-//  "terms":"https:\/\/currencylayer.com\/terms",
-//  "privacy":"https:\/\/currencylayer.com\/privacy",
-//  "timestamp":1499368747,
-//  "source":"USD",
-//  "quotes":{
-//  "USDEUR":0.875504,
-//  "USDGBP":0.77131,
-//  "USDCAD":1.29622,
-//  "USDPLN":3.7103
-//  }
-//  }
-}
-
-struct Currency {
-
-  var rate: Float
-}
