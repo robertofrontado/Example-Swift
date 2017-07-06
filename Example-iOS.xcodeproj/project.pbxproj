@@ -27,8 +27,14 @@
 		A221627A1F0EDE6000EAAF08 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162791F0EDE6000EAAF08 /* MockAPI.swift */; };
 		A221627C1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221627B1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift */; };
 		A221627F1F0EE49000EAAF08 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221627E1F0EE49000EAAF08 /* SplashViewController.swift */; };
+		A22162811F0EE4F500EAAF08 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162801F0EE4F500EAAF08 /* Wireframe.swift */; };
+		A22162831F0EE50D00EAAF08 /* WireframeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162821F0EE50D00EAAF08 /* WireframeImpl.swift */; };
 		A22162851F0EE94E00EAAF08 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162841F0EE94E00EAAF08 /* Currency.swift */; };
 		A22162871F0EED7300EAAF08 /* CurrencyRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162861F0EED7300EAAF08 /* CurrencyRepositoryTest.swift */; };
+		A221628A1F0EEFB500EAAF08 /* ApplicationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162891F0EEFB500EAAF08 /* ApplicationModule.swift */; };
+		A221628C1F0EEFCD00EAAF08 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221628B1F0EEFCD00EAAF08 /* DataModule.swift */; };
+		A221628E1F0EEFD700EAAF08 /* PresentationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221628D1F0EEFD700EAAF08 /* PresentationModule.swift */; };
+		A22162901F0EF10600EAAF08 /* UIStoryboard+getViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221628F1F0EF10600EAAF08 /* UIStoryboard+getViewController.swift */; };
 		A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DB91F0EB77200055B2F /* AppDelegate.swift */; };
 		A2938DBF1F0EB77200055B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2938DBD1F0EB77200055B2F /* Main.storyboard */; };
 		A2938DC11F0EB77200055B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2938DC01F0EB77200055B2F /* Assets.xcassets */; };
@@ -74,8 +80,14 @@
 		A22162791F0EDE6000EAAF08 /* MockAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		A221627B1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsRepositoryTest.swift; sourceTree = "<group>"; };
 		A221627E1F0EE49000EAAF08 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A22162801F0EE4F500EAAF08 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		A22162821F0EE50D00EAAF08 /* WireframeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeImpl.swift; sourceTree = "<group>"; };
 		A22162841F0EE94E00EAAF08 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		A22162861F0EED7300EAAF08 /* CurrencyRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRepositoryTest.swift; sourceTree = "<group>"; };
+		A22162891F0EEFB500EAAF08 /* ApplicationModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModule.swift; sourceTree = "<group>"; };
+		A221628B1F0EEFCD00EAAF08 /* DataModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
+		A221628D1F0EEFD700EAAF08 /* PresentationModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationModule.swift; sourceTree = "<group>"; };
+		A221628F1F0EF10600EAAF08 /* UIStoryboard+getViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+getViewController.swift"; sourceTree = "<group>"; };
 		A2938DB61F0EB77200055B2F /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2938DB91F0EB77200055B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		A2938DBE1F0EB77200055B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				A221625F1F0EDAE000EAAF08 /* UIApplication+TopViewController.swift */,
+				A221628F1F0EF10600EAAF08 /* UIStoryboard+getViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -159,6 +172,8 @@
 		A221625E1F0EDA9500EAAF08 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				A22162801F0EE4F500EAAF08 /* Wireframe.swift */,
+				A22162821F0EE50D00EAAF08 /* WireframeImpl.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -233,6 +248,16 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		A22162881F0EEFA000EAAF08 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				A22162891F0EEFB500EAAF08 /* ApplicationModule.swift */,
+				A221628B1F0EEFCD00EAAF08 /* DataModule.swift */,
+				A221628D1F0EEFD700EAAF08 /* PresentationModule.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		A2938DAD1F0EB77200055B2F = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +283,7 @@
 		A2938DB81F0EB77200055B2F /* Example-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A22162881F0EEFA000EAAF08 /* DI */,
 				A2A105E31F0EC5BD00934F12 /* Data */,
 				A2A105E41F0EC5BD00934F12 /* Domain */,
 				A2A105E51F0EC5BD00934F12 /* Presentation */,
@@ -579,6 +605,7 @@
 				A221625A1F0ED92100EAAF08 /* BasePresenter.swift in Sources */,
 				A22162531F0ED8EB00EAAF08 /* HomePresenter.swift in Sources */,
 				A22162601F0EDAE000EAAF08 /* UIApplication+TopViewController.swift in Sources */,
+				A221628C1F0EEFCD00EAAF08 /* DataModule.swift in Sources */,
 				A22162471F0ECF6A00EAAF08 /* Item.swift in Sources */,
 				A22162851F0EE94E00EAAF08 /* Currency.swift in Sources */,
 				A22162581F0ED91800EAAF08 /* BaseViewController.swift in Sources */,
@@ -586,12 +613,17 @@
 				A221626E1F0EDCCC00EAAF08 /* ItemsRepository.swift in Sources */,
 				A221626C1F0EDC9600EAAF08 /* BaseRepository.swift in Sources */,
 				A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */,
+				A221628E1F0EEFD700EAAF08 /* PresentationModule.swift in Sources */,
 				A221627F1F0EE49000EAAF08 /* SplashViewController.swift in Sources */,
 				A221625C1F0ED92700EAAF08 /* BaseView.swift in Sources */,
+				A22162831F0EE50D00EAAF08 /* WireframeImpl.swift in Sources */,
 				A22162701F0EDCD400EAAF08 /* CurrencyRepository.swift in Sources */,
+				A22162811F0EE4F500EAAF08 /* Wireframe.swift in Sources */,
 				A221626A1F0EDC8600EAAF08 /* RestAPI.swift in Sources */,
 				A22162691F0EDC8600EAAF08 /* API.swift in Sources */,
 				A22162511F0ED8E400EAAF08 /* HomeViewController.swift in Sources */,
+				A22162901F0EF10600EAAF08 /* UIStoryboard+getViewController.swift in Sources */,
+				A221628A1F0EEFB500EAAF08 /* ApplicationModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
