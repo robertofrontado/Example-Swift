@@ -97,6 +97,9 @@
 		A2938DB81F0EB77200055B2F /* Example-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A2A105E31F0EC5BD00934F12 /* Data */,
+				A2A105E41F0EC5BD00934F12 /* Domain */,
+				A2A105E51F0EC5BD00934F12 /* Presentation */,
 				A2938DB91F0EB77200055B2F /* AppDelegate.swift */,
 				A2938DBB1F0EB77200055B2F /* ViewController.swift */,
 				A2938DBD1F0EB77200055B2F /* Main.storyboard */,
@@ -123,6 +126,27 @@
 				A2938DDB1F0EB77200055B2F /* Info.plist */,
 			);
 			path = "Example-iOSUITests";
+			sourceTree = "<group>";
+		};
+		A2A105E31F0EC5BD00934F12 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A2A105E41F0EC5BD00934F12 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A2A105E51F0EC5BD00934F12 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +540,7 @@
 				A2938DE01F0EB77200055B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2938DE11F0EB77200055B2F /* Build configuration list for PBXNativeTarget "Example-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +549,7 @@
 				A2938DE31F0EB77200055B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2938DE41F0EB77200055B2F /* Build configuration list for PBXNativeTarget "Example-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +558,7 @@
 				A2938DE61F0EB77200055B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
