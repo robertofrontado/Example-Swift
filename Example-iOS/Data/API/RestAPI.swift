@@ -11,9 +11,12 @@ import AlamofireObjectMapper
 
 class RestAPI: API {
 
-  func getItems(onCompletion: @escaping (_ result: Result<[Item]>) -> Void) {
+  func getItems(onCompletion: @escaping (_ items: [Item], _ error: Error?) -> Void) {
     Alamofire.request("https://raw.githubusercontent.com/robertofrontado/Example-iOS/develop/Items.json", method: .get)
-      .responseArray { onCompletion($0.result) }
+      .responseArray(completionHandler: { (response: DataResponse<[Item]>) in
+        let items: [Item] = response.result.value ?? []
+        onCompletion(items, response.result.error)
+      })
   }
 
   func getCurrenciesConvertionRate() {

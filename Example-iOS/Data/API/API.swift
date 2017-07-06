@@ -10,6 +10,6 @@ import Alamofire
 
 protocol API {
 
-  func getItems(onCompletion: @escaping (_ result: Result<[Item]>) -> Void)
+  func getItems(onCompletion: @escaping (_ items: [Item], _ error: Error?) -> Void)
   func getCurrenciesConvertionRate()
 }
