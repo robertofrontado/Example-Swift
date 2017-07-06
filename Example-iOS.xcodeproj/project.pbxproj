@@ -26,6 +26,7 @@
 		A22162781F0EDDB900EAAF08 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162771F0EDDB900EAAF08 /* Mocks.swift */; };
 		A221627A1F0EDE6000EAAF08 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162791F0EDE6000EAAF08 /* MockAPI.swift */; };
 		A221627C1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221627B1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift */; };
+		A221627F1F0EE49000EAAF08 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221627E1F0EE49000EAAF08 /* SplashViewController.swift */; };
 		A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DB91F0EB77200055B2F /* AppDelegate.swift */; };
 		A2938DBF1F0EB77200055B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2938DBD1F0EB77200055B2F /* Main.storyboard */; };
 		A2938DC11F0EB77200055B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2938DC01F0EB77200055B2F /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		A22162771F0EDDB900EAAF08 /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		A22162791F0EDE6000EAAF08 /* MockAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		A221627B1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsRepositoryTest.swift; sourceTree = "<group>"; };
+		A221627E1F0EE49000EAAF08 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A2938DB61F0EB77200055B2F /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2938DB91F0EB77200055B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		A2938DBE1F0EB77200055B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -217,6 +219,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		A221627D1F0EE48500EAAF08 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A2938DBD1F0EB77200055B2F /* Main.storyboard */,
+				A221627E1F0EE49000EAAF08 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		A2938DAD1F0EB77200055B2F = {
 			isa = PBXGroup;
 			children = (
@@ -245,7 +256,6 @@
 				A2A105E31F0EC5BD00934F12 /* Data */,
 				A2A105E41F0EC5BD00934F12 /* Domain */,
 				A2A105E51F0EC5BD00934F12 /* Presentation */,
-				A2938DBD1F0EB77200055B2F /* Main.storyboard */,
 				A2938DC01F0EB77200055B2F /* Assets.xcassets */,
 				A2938DC21F0EB77200055B2F /* LaunchScreen.storyboard */,
 				A2938DC51F0EB77200055B2F /* Info.plist */,
@@ -294,6 +304,7 @@
 			children = (
 				A2938DB91F0EB77200055B2F /* AppDelegate.swift */,
 				A22162561F0ED90E00EAAF08 /* Base */,
+				A221627D1F0EE48500EAAF08 /* Splash */,
 				A221624E1F0ED79B00EAAF08 /* Home */,
 				A221624F1F0ED79B00EAAF08 /* PopUp */,
 				A221625E1F0EDA9500EAAF08 /* Wireframe */,
@@ -568,6 +579,7 @@
 				A221626E1F0EDCCC00EAAF08 /* ItemsRepository.swift in Sources */,
 				A221626C1F0EDC9600EAAF08 /* BaseRepository.swift in Sources */,
 				A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */,
+				A221627F1F0EE49000EAAF08 /* SplashViewController.swift in Sources */,
 				A221625C1F0ED92700EAAF08 /* BaseView.swift in Sources */,
 				A22162701F0EDCD400EAAF08 /* CurrencyRepository.swift in Sources */,
 				A221626A1F0EDC8600EAAF08 /* RestAPI.swift in Sources */,
@@ -616,6 +628,7 @@
 				A2938DBE1F0EB77200055B2F /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		A2938DC21F0EB77200055B2F /* LaunchScreen.storyboard */ = {
