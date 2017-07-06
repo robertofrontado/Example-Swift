@@ -13,6 +13,11 @@ struct Item: Mappable {
   var name: String?
   var price: Float?
 
+  init(name: String, price: Float) {
+    self.name = name
+    self.price = price
+  }
+
   init?(map: Map) {
 
   }
