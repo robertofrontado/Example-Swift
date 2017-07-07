@@ -12,6 +12,17 @@ enum CurrencyType: String {
   case USD = "USD"
   case EUR = "EUR"
   case GBP = "GBP"
+
+  func getSymbol() -> String {
+    switch self {
+    case .USD:
+      return "$"
+    case .EUR:
+      return "€"
+    case .GBP:
+      return "£"
+    }
+  }
 }
 
 struct Currency: Mappable {
