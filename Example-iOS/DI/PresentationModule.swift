@@ -20,19 +20,30 @@ class PresentationModule {
 
   static func resolvePresenters(_ defaultContainer: Container) {
 
+    defaultContainer.register(BasePresenter.self) { r in
+      BasePresenter()
+    }
+
     // MARK: - Home
     defaultContainer.register(HomePresenter.self) { r in
       HomePresenter(itemsRepository: r.resolve(ItemsRepository.self)!)
     }
-
   }
 
   static func resolveViewControllers(_ defaultContainer: Container) {
 
-    // MARK: - Home
-    defaultContainer.storyboardInitCompleted(HomeViewController.self) { r, c in
-      c.presenter = r.resolve(HomePresenter.self)!
-      c.wireframe = r.resolve(Wireframe.self)!
+    // To make your life easier
+    func register<P: BasePresenter, V: BaseViewController<P>> (vc: V.Type, p: P.Type = V.Presenter.self) where V.Presenter == P {
+      defaultContainer.storyboardInitCompleted(V.self) { r, c in
+        c.presenter = r.resolve(V.Presenter.self)!
+        c.wireframe = r.resolve(Wireframe.self)!
+      }
     }
+
+    // MARK: - Splash
+    register(vc: SplashViewController.self)
+
+    // MARK: - Home
+    register(vc: HomeViewController.self)
   }
 }
