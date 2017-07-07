@@ -22,7 +22,7 @@ class PresentationModule {
 
     // MARK: - Home
     defaultContainer.register(HomePresenter.self) { r in
-      HomePresenter()
+      HomePresenter(itemsRepository: r.resolve(ItemsRepository.self)!)
     }
 
   }

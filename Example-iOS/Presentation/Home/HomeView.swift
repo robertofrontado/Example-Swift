@@ -7,5 +7,5 @@
 //
 
 protocol HomeView: BaseView {
-
+  func getItemsCompleted(items: [Item])
 }

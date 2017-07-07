@@ -12,4 +12,9 @@ class HomeViewController: BaseViewController<HomePresenter>, HomeView {
     super.viewDidLoad()
   }
 
+  // MARK: - HomeView
+  func getItemsCompleted(items: [Item]) {
+    
+  }
+
 }
