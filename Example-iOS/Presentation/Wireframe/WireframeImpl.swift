@@ -13,7 +13,8 @@ class WireframeImpl: Wireframe {
   // MARK: - Home
   func home() {
     let vc = UIStoryboard.getViewController("Home", clazz: HomeViewController.self)!
-    pushViewController(vc, animated: true)
+    let nvc = UINavigationController(rootViewController: vc)
+    pushViewController(nvc, animated: true)
   }
 
   // MARK: - Currency
