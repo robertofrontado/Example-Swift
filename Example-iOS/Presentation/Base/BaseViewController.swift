@@ -14,6 +14,7 @@ class BaseViewController<P: BasePresenter>: UIViewController, BaseView {
   typealias Presenter = P
 
   var presenter: Presenter!
+  var wireframe: Wireframe!
 
   override func viewDidLoad() {
     super.viewDidLoad()

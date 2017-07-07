@@ -32,6 +32,7 @@ class PresentationModule {
     // MARK: - Home
     defaultContainer.storyboardInitCompleted(HomeViewController.self) { r, c in
       c.presenter = r.resolve(HomePresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
     }
   }
 }
