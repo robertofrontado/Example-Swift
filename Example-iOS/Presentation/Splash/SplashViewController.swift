@@ -8,10 +8,14 @@
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class SplashViewController: BaseViewController<BasePresenter> {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) { 
+      self.wireframe.home()
+    }
   }
 
 }
