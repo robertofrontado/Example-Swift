@@ -58,7 +58,6 @@
 		A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DB91F0EB77200055B2F /* AppDelegate.swift */; };
 		A2938DBF1F0EB77200055B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2938DBD1F0EB77200055B2F /* Main.storyboard */; };
 		A2938DC11F0EB77200055B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2938DC01F0EB77200055B2F /* Assets.xcassets */; };
-		A2938DDA1F0EB77200055B2F /* Example_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DD91F0EB77200055B2F /* Example_iOSUITests.swift */; };
 		A2991B531F1177FF00396AFB /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B511F1177FF00396AFB /* HomeViewControllerTest.swift */; };
 		A2991B541F1177FF00396AFB /* MockHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B521F1177FF00396AFB /* MockHomePresenter.swift */; };
 		A2991B561F11781100396AFB /* CheckoutViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B551F11781100396AFB /* CheckoutViewControllerTest.swift */; };
@@ -67,6 +66,8 @@
 		A2991B5C1F1182C700396AFB /* BaseViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B5B1F1182C700396AFB /* BaseViewControllerTest.swift */; };
 		A2991B5E1F11840100396AFB /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B5D1F11840100396AFB /* TestAppDelegate.swift */; };
 		A2991B601F1184A300396AFB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B5F1F1184A300396AFB /* main.swift */; };
+		A2991B621F11886600396AFB /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B611F11886600396AFB /* BaseTest.swift */; };
+		A2991B641F11898B00396AFB /* HappyPathTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B631F11898B00396AFB /* HappyPathTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,7 +144,6 @@
 		A2938DCA1F0EB77200055B2F /* Example-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Example-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2938DD01F0EB77200055B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2938DD51F0EB77200055B2F /* Example-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Example-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2938DD91F0EB77200055B2F /* Example_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_iOSUITests.swift; sourceTree = "<group>"; };
 		A2938DDB1F0EB77200055B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2991B511F1177FF00396AFB /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
 		A2991B521F1177FF00396AFB /* MockHomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomePresenter.swift; sourceTree = "<group>"; };
@@ -153,6 +153,8 @@
 		A2991B5B1F1182C700396AFB /* BaseViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTest.swift; sourceTree = "<group>"; };
 		A2991B5D1F11840100396AFB /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
 		A2991B5F1F1184A300396AFB /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A2991B611F11886600396AFB /* BaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		A2991B631F11898B00396AFB /* HappyPathTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyPathTest.swift; sourceTree = "<group>"; };
 		A53A39C90902D395E0353C56 /* Pods-Example-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOSTests/Pods-Example-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B67B1550A7D7D3F68C3045EA /* Pods-Example-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOS/Pods-Example-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		B7AA154ADF42D625D7C79A4F /* Pods_Example_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -402,8 +404,9 @@
 		A2938DD81F0EB77200055B2F /* Example-iOSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A2938DD91F0EB77200055B2F /* Example_iOSUITests.swift */,
 				A2938DDB1F0EB77200055B2F /* Info.plist */,
+				A2991B611F11886600396AFB /* BaseTest.swift */,
+				A2991B631F11898B00396AFB /* HappyPathTest.swift */,
 			);
 			path = "Example-iOSUITests";
 			sourceTree = "<group>";
@@ -782,7 +785,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2938DDA1F0EB77200055B2F /* Example_iOSUITests.swift in Sources */,
+				A2991B621F11886600396AFB /* BaseTest.swift in Sources */,
+				A2991B641F11898B00396AFB /* HappyPathTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

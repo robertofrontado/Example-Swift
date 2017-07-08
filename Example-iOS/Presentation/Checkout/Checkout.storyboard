@@ -43,6 +43,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8H-Qb-SCs">
                                         <rect key="frame" x="0.0" y="208" width="279" height="48"/>
                                         <color key="backgroundColor" red="0.08235294118" green="0.82352941180000006" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="button.buy"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="P9W-y0-h1A"/>
                                         </constraints>
@@ -61,6 +62,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ge-vv-8MM">
                                                 <rect key="frame" x="1" y="1" width="91.5" height="46"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="button.eur"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="€"/>
                                                 <connections>
@@ -70,6 +72,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCi-84-aBi">
                                                 <rect key="frame" x="93.5" y="1" width="92" height="46"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="button.usd"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="$"/>
                                                 <connections>
@@ -79,6 +82,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeG-hN-x1x">
                                                 <rect key="frame" x="186.5" y="1" width="91.5" height="46"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="button.gbp"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="£"/>
                                                 <connections>
