@@ -1,9 +1,7 @@
 platform :ios, '9.0'
+use_frameworks!
 
-target 'Example-iOS' do
-  use_frameworks!
-
-  # Pods for Example-iOS
+def shared_pods
   pod 'Kingfisher'
   pod 'Swinject'
   pod 'SwinjectStoryboard'
@@ -12,11 +10,14 @@ target 'Example-iOS' do
   pod 'ObjectMapper'
   pod 'Alamofire', '~> 4.4'
   pod 'AlamofireObjectMapper', '~> 4.0'
+end
 
-  target 'Example-iOSTests' do
-    inherit! :search_paths
-    pod 'Quick'
-    pod 'Nimble'
-  end
+target 'Example-iOS' do
+  shared_pods
+end
 
+target 'Example-iOSTests' do
+  shared_pods
+  pod 'Quick'
+  pod 'Nimble'
 end
