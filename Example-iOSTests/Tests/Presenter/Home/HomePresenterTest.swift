@@ -25,9 +25,9 @@ class HomePresenterTest: QuickSpec {
         homePresenter.attachView(view: mockView)
       }
 
-      it("Should call showItems when getItems is triggered") {
+      it("Should call getItemsSuccesful when getItems is triggered") {
         homePresenter.getItems()
-        expect(mockView.getItemsCompletedCalled).to(beTrue())
+        expect(mockView.getItemsSuccesfulCalled).to(beTrue())
       }
 
       it("Should call showError error if getItems fails") {

@@ -27,7 +27,7 @@ class HomePresenter: BasePresenter {
         self.view?.showError(error: error)
         return
       }
-      self.view?.getItemsCompleted(items: items)
+      self.view?.getItemsSuccesful(items: items)
     }
   }
   

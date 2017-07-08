@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		63F534232BB8015B97A16A3D /* Pods_Example_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AA154ADF42D625D7C79A4F /* Pods_Example_iOSTests.framework */; };
 		6BED28FD5991E41B3D7D6220 /* Pods_Example_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5675E182F97C902291A10D8 /* Pods_Example_iOS.framework */; };
-		A2048D351F1020E500C67238 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2048D341F1020E500C67238 /* HomePresenterTest.swift */; };
-		A2048D371F10212A00C67238 /* MockItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2048D361F10212A00C67238 /* MockItemsRepository.swift */; };
-		A2048D391F10269F00C67238 /* MockHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2048D381F10269F00C67238 /* MockHomeView.swift */; };
-		A2048D3B1F1026CC00C67238 /* MockBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2048D3A1F1026CC00C67238 /* MockBaseView.swift */; };
 		A2048D3D1F10329D00C67238 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2048D3C1F10329D00C67238 /* HomeTableViewCell.swift */; };
 		A2048D3F1F10363300C67238 /* HomeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2048D3E1F10363300C67238 /* HomeTableViewDataSource.swift */; };
 		A2048D411F103D8900C67238 /* HomeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2048D401F103D8900C67238 /* HomeItemViewModel.swift */; };
@@ -30,8 +26,6 @@
 		A221626C1F0EDC9600EAAF08 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221626B1F0EDC9600EAAF08 /* BaseRepository.swift */; };
 		A221626E1F0EDCCC00EAAF08 /* ItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221626D1F0EDCCC00EAAF08 /* ItemsRepository.swift */; };
 		A22162701F0EDCD400EAAF08 /* CurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221626F1F0EDCD400EAAF08 /* CurrencyRepository.swift */; };
-		A22162781F0EDDB900EAAF08 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162771F0EDDB900EAAF08 /* Mocks.swift */; };
-		A221627A1F0EDE6000EAAF08 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162791F0EDE6000EAAF08 /* MockAPI.swift */; };
 		A221627C1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221627B1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift */; };
 		A221627F1F0EE49000EAAF08 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221627E1F0EE49000EAAF08 /* SplashViewController.swift */; };
 		A22162811F0EE4F500EAAF08 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162801F0EE4F500EAAF08 /* Wireframe.swift */; };
@@ -50,10 +44,27 @@
 		A23B1A741F10FB30002B8335 /* CheckoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A701F10FB30002B8335 /* CheckoutPresenter.swift */; };
 		A23B1A751F10FB30002B8335 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A711F10FB30002B8335 /* CheckoutView.swift */; };
 		A23B1A761F10FB30002B8335 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A721F10FB30002B8335 /* CheckoutViewController.swift */; };
+		A23B1A7B1F10FD89002B8335 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A791F10FD89002B8335 /* HomePresenterTest.swift */; };
+		A23B1A7C1F10FD89002B8335 /* MockHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A7A1F10FD89002B8335 /* MockHomeView.swift */; };
+		A23B1A7E1F10FD96002B8335 /* CheckoutPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A7D1F10FD96002B8335 /* CheckoutPresenterTest.swift */; };
+		A23B1A801F10FDA2002B8335 /* MockCheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A7F1F10FDA2002B8335 /* MockCheckoutView.swift */; };
+		A23B1A861F10FDB5002B8335 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A821F10FDB5002B8335 /* MockAPI.swift */; };
+		A23B1A871F10FDB5002B8335 /* MockBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A831F10FDB5002B8335 /* MockBaseView.swift */; };
+		A23B1A881F10FDB5002B8335 /* MockItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A841F10FDB5002B8335 /* MockItemsRepository.swift */; };
+		A23B1A891F10FDB5002B8335 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A851F10FDB5002B8335 /* Mocks.swift */; };
+		A23B1A8B1F10FDDF002B8335 /* MockCurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A8A1F10FDDF002B8335 /* MockCurrencyRepository.swift */; };
+		A23B1A911F117109002B8335 /* UIViewController+PreloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A901F117109002B8335 /* UIViewController+PreloadView.swift */; };
+		A23B1A931F11716F002B8335 /* MockWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A921F11716F002B8335 /* MockWireframe.swift */; };
 		A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DB91F0EB77200055B2F /* AppDelegate.swift */; };
 		A2938DBF1F0EB77200055B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2938DBD1F0EB77200055B2F /* Main.storyboard */; };
 		A2938DC11F0EB77200055B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2938DC01F0EB77200055B2F /* Assets.xcassets */; };
 		A2938DDA1F0EB77200055B2F /* Example_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DD91F0EB77200055B2F /* Example_iOSUITests.swift */; };
+		A2991B531F1177FF00396AFB /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B511F1177FF00396AFB /* HomeViewControllerTest.swift */; };
+		A2991B541F1177FF00396AFB /* MockHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B521F1177FF00396AFB /* MockHomePresenter.swift */; };
+		A2991B561F11781100396AFB /* CheckoutViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B551F11781100396AFB /* CheckoutViewControllerTest.swift */; };
+		A2991B581F11781F00396AFB /* MockCheckoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B571F11781F00396AFB /* MockCheckoutPresenter.swift */; };
+		A2991B5A1F11789C00396AFB /* MockCheckoutViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B591F11789C00396AFB /* MockCheckoutViewControllerDelegate.swift */; };
+		A2991B5C1F1182C700396AFB /* BaseViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B5B1F1182C700396AFB /* BaseViewControllerTest.swift */; };
 		A2991B5E1F11840100396AFB /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B5D1F11840100396AFB /* TestAppDelegate.swift */; };
 		A2991B601F1184A300396AFB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2991B5F1F1184A300396AFB /* main.swift */; };
 /* End PBXBuildFile section */
@@ -78,10 +89,6 @@
 /* Begin PBXFileReference section */
 		06216CA92B772C4127C95D55 /* Pods-Example-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOS/Pods-Example-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3E3FD5FC1B2F2F7E4767D5E5 /* Pods-Example-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOSTests/Pods-Example-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		A2048D341F1020E500C67238 /* HomePresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
-		A2048D361F10212A00C67238 /* MockItemsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockItemsRepository.swift; sourceTree = "<group>"; };
-		A2048D381F10269F00C67238 /* MockHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeView.swift; sourceTree = "<group>"; };
-		A2048D3A1F1026CC00C67238 /* MockBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockBaseView.swift; sourceTree = "<group>"; };
 		A2048D3C1F10329D00C67238 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		A2048D3E1F10363300C67238 /* HomeTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewDataSource.swift; sourceTree = "<group>"; };
 		A2048D401F103D8900C67238 /* HomeItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemViewModel.swift; sourceTree = "<group>"; };
@@ -99,8 +106,6 @@
 		A221626B1F0EDC9600EAAF08 /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		A221626D1F0EDCCC00EAAF08 /* ItemsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsRepository.swift; sourceTree = "<group>"; };
 		A221626F1F0EDCD400EAAF08 /* CurrencyRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRepository.swift; sourceTree = "<group>"; };
-		A22162771F0EDDB900EAAF08 /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
-		A22162791F0EDE6000EAAF08 /* MockAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		A221627B1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsRepositoryTest.swift; sourceTree = "<group>"; };
 		A221627E1F0EE49000EAAF08 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A22162801F0EE4F500EAAF08 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
@@ -119,6 +124,17 @@
 		A23B1A701F10FB30002B8335 /* CheckoutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutPresenter.swift; sourceTree = "<group>"; };
 		A23B1A711F10FB30002B8335 /* CheckoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		A23B1A721F10FB30002B8335 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		A23B1A791F10FD89002B8335 /* HomePresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
+		A23B1A7A1F10FD89002B8335 /* MockHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeView.swift; sourceTree = "<group>"; };
+		A23B1A7D1F10FD96002B8335 /* CheckoutPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutPresenterTest.swift; sourceTree = "<group>"; };
+		A23B1A7F1F10FDA2002B8335 /* MockCheckoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCheckoutView.swift; sourceTree = "<group>"; };
+		A23B1A821F10FDB5002B8335 /* MockAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		A23B1A831F10FDB5002B8335 /* MockBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockBaseView.swift; sourceTree = "<group>"; };
+		A23B1A841F10FDB5002B8335 /* MockItemsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockItemsRepository.swift; sourceTree = "<group>"; };
+		A23B1A851F10FDB5002B8335 /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		A23B1A8A1F10FDDF002B8335 /* MockCurrencyRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCurrencyRepository.swift; sourceTree = "<group>"; };
+		A23B1A901F117109002B8335 /* UIViewController+PreloadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PreloadView.swift"; sourceTree = "<group>"; };
+		A23B1A921F11716F002B8335 /* MockWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWireframe.swift; sourceTree = "<group>"; };
 		A2938DB61F0EB77200055B2F /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2938DB91F0EB77200055B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2938DBE1F0EB77200055B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,6 +145,12 @@
 		A2938DD51F0EB77200055B2F /* Example-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Example-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2938DD91F0EB77200055B2F /* Example_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_iOSUITests.swift; sourceTree = "<group>"; };
 		A2938DDB1F0EB77200055B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2991B511F1177FF00396AFB /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
+		A2991B521F1177FF00396AFB /* MockHomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomePresenter.swift; sourceTree = "<group>"; };
+		A2991B551F11781100396AFB /* CheckoutViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewControllerTest.swift; sourceTree = "<group>"; };
+		A2991B571F11781F00396AFB /* MockCheckoutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCheckoutPresenter.swift; sourceTree = "<group>"; };
+		A2991B591F11789C00396AFB /* MockCheckoutViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCheckoutViewControllerDelegate.swift; sourceTree = "<group>"; };
+		A2991B5B1F1182C700396AFB /* BaseViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTest.swift; sourceTree = "<group>"; };
 		A2991B5D1F11840100396AFB /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
 		A2991B5F1F1184A300396AFB /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A53A39C90902D395E0353C56 /* Pods-Example-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOSTests/Pods-Example-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -229,17 +251,6 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		A22162711F0EDD8A00EAAF08 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				A22162771F0EDDB900EAAF08 /* Mocks.swift */,
-				A22162791F0EDE6000EAAF08 /* MockAPI.swift */,
-				A2048D361F10212A00C67238 /* MockItemsRepository.swift */,
-				A2048D3A1F1026CC00C67238 /* MockBaseView.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
 		A22162721F0EDD8A00EAAF08 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,8 +264,8 @@
 		A22162731F0EDD8A00EAAF08 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				A2048D341F1020E500C67238 /* HomePresenterTest.swift */,
-				A2048D381F10269F00C67238 /* MockHomeView.swift */,
+				A23B1A771F10FD89002B8335 /* Checkout */,
+				A23B1A781F10FD89002B8335 /* Home */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -271,6 +282,9 @@
 		A22162751F0EDD8A00EAAF08 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A2991B5B1F1182C700396AFB /* BaseViewControllerTest.swift */,
+				A2991B501F1177FF00396AFB /* Home */,
+				A2991B4F1F1177FF00396AFB /* Checkout */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -303,6 +317,38 @@
 				A23B1A721F10FB30002B8335 /* CheckoutViewController.swift */,
 			);
 			path = Checkout;
+			sourceTree = "<group>";
+		};
+		A23B1A771F10FD89002B8335 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				A23B1A7D1F10FD96002B8335 /* CheckoutPresenterTest.swift */,
+				A23B1A7F1F10FDA2002B8335 /* MockCheckoutView.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		A23B1A781F10FD89002B8335 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A23B1A791F10FD89002B8335 /* HomePresenterTest.swift */,
+				A23B1A7A1F10FD89002B8335 /* MockHomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A23B1A811F10FDB5002B8335 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A23B1A851F10FDB5002B8335 /* Mocks.swift */,
+				A23B1A821F10FDB5002B8335 /* MockAPI.swift */,
+				A23B1A831F10FDB5002B8335 /* MockBaseView.swift */,
+				A23B1A921F11716F002B8335 /* MockWireframe.swift */,
+				A23B1A841F10FDB5002B8335 /* MockItemsRepository.swift */,
+				A23B1A8A1F10FDDF002B8335 /* MockCurrencyRepository.swift */,
+				A23B1A901F117109002B8335 /* UIViewController+PreloadView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		A2938DAD1F0EB77200055B2F = {
@@ -346,7 +392,7 @@
 		A2938DCD1F0EB77200055B2F /* Example-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				A22162711F0EDD8A00EAAF08 /* Mocks */,
+				A23B1A811F10FDB5002B8335 /* Helpers */,
 				A22162721F0EDD8A00EAAF08 /* Tests */,
 				A2938DD01F0EB77200055B2F /* Info.plist */,
 			);
@@ -360,6 +406,25 @@
 				A2938DDB1F0EB77200055B2F /* Info.plist */,
 			);
 			path = "Example-iOSUITests";
+			sourceTree = "<group>";
+		};
+		A2991B4F1F1177FF00396AFB /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				A2991B551F11781100396AFB /* CheckoutViewControllerTest.swift */,
+				A2991B571F11781F00396AFB /* MockCheckoutPresenter.swift */,
+				A2991B591F11789C00396AFB /* MockCheckoutViewControllerDelegate.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		A2991B501F1177FF00396AFB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A2991B511F1177FF00396AFB /* HomeViewControllerTest.swift */,
+				A2991B521F1177FF00396AFB /* MockHomePresenter.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		A2A105E31F0EC5BD00934F12 /* Data */ = {
@@ -691,14 +756,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2048D391F10269F00C67238 /* MockHomeView.swift in Sources */,
-				A2048D371F10212A00C67238 /* MockItemsRepository.swift in Sources */,
-				A221627A1F0EDE6000EAAF08 /* MockAPI.swift in Sources */,
+				A2991B561F11781100396AFB /* CheckoutViewControllerTest.swift in Sources */,
+				A23B1A931F11716F002B8335 /* MockWireframe.swift in Sources */,
+				A23B1A801F10FDA2002B8335 /* MockCheckoutView.swift in Sources */,
+				A23B1A7C1F10FD89002B8335 /* MockHomeView.swift in Sources */,
+				A23B1A861F10FDB5002B8335 /* MockAPI.swift in Sources */,
+				A23B1A7B1F10FD89002B8335 /* HomePresenterTest.swift in Sources */,
 				A221627C1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift in Sources */,
+				A2991B581F11781F00396AFB /* MockCheckoutPresenter.swift in Sources */,
 				A22162871F0EED7300EAAF08 /* CurrencyRepositoryTest.swift in Sources */,
-				A2048D3B1F1026CC00C67238 /* MockBaseView.swift in Sources */,
-				A2048D351F1020E500C67238 /* HomePresenterTest.swift in Sources */,
-				A22162781F0EDDB900EAAF08 /* Mocks.swift in Sources */,
+				A23B1A871F10FDB5002B8335 /* MockBaseView.swift in Sources */,
+				A2991B5C1F1182C700396AFB /* BaseViewControllerTest.swift in Sources */,
+				A2991B541F1177FF00396AFB /* MockHomePresenter.swift in Sources */,
+				A23B1A8B1F10FDDF002B8335 /* MockCurrencyRepository.swift in Sources */,
+				A23B1A7E1F10FD96002B8335 /* CheckoutPresenterTest.swift in Sources */,
+				A23B1A891F10FDB5002B8335 /* Mocks.swift in Sources */,
+				A23B1A881F10FDB5002B8335 /* MockItemsRepository.swift in Sources */,
+				A2991B5A1F11789C00396AFB /* MockCheckoutViewControllerDelegate.swift in Sources */,
+				A23B1A911F117109002B8335 /* UIViewController+PreloadView.swift in Sources */,
+				A2991B531F1177FF00396AFB /* HomeViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

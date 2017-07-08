@@ -32,7 +32,7 @@ class HomeViewController: BaseViewController<HomePresenter>, HomeView, CheckoutV
   }
 
   // MARK: - HomeView
-  func getItemsCompleted(items: [Item]) {
+  func getItemsSuccesful(items: [Item]) {
     homeItemViewModels = items.map { HomeItemViewModel(item: $0) }
     dataSource.items = homeItemViewModels
     tableView.reloadData(with: .automatic)
@@ -60,7 +60,7 @@ class HomeViewController: BaseViewController<HomePresenter>, HomeView, CheckoutV
   }
 
   // MARK: - CheckoutViewControllerDelegate
-  func onCheckoutCompleted() {
+  func onCheckoutSuccesful() {
     // Reset amount of each item
     homeItemViewModels = homeItemViewModels.map {
       $0.amount = 0

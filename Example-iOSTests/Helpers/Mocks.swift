@@ -16,7 +16,7 @@ class Mocks {
   }
 
   static func getItems() -> [Item] {
-    let item = Item(name: "item", price: 1)
+    let item = Item(id: 1, name: "item", price: 1)
     return [item, item, item]
   }
 

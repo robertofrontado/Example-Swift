@@ -10,10 +10,10 @@
 
 class MockHomeView: MockBaseView, HomeView {
 
-  var getItemsCompletedCalled = false
+  var getItemsSuccesfulCalled = false
 
-  func getItemsCompleted(items: [Item]) {
-    getItemsCompletedCalled = true
+  func getItemsSuccesful(items: [Item]) {
+    getItemsSuccesfulCalled = true
   }
 
 }

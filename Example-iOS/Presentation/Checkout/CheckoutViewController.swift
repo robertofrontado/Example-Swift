@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CheckoutViewControllerDelegate: class {
-  func onCheckoutCompleted()
+  func onCheckoutSuccesful()
 }
 
 class CheckoutViewController: BaseViewController<CheckoutPresenter>, CheckoutView {
@@ -62,7 +62,7 @@ class CheckoutViewController: BaseViewController<CheckoutPresenter>, CheckoutVie
   @IBAction func buyItems() {
     UIAlertController.showAlertOneButton("Congratulations!", message: "You'll receive your order shortly", buttonTitle: "Ok") { 
       self.dismiss {
-        self.delegate?.onCheckoutCompleted()
+        self.delegate?.onCheckoutSuccesful()
       }
     }
   }
