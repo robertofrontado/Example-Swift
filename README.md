@@ -5,6 +5,7 @@
 [![codecov](https://codecov.io/gh/robertofrontado/Example-iOS/branch/master/graph/badge.svg)](https://codecov.io/gh/robertofrontado/Example-iOS)
 [![Build Status](https://www.bitrise.io/app/58218597e7ddae87/status.svg?token=9--SSTEmy13Z55bXYIGqXw&branch=master)](https://www.bitrise.io/app/58218597e7ddae87)
 
+
 # Installing
 
 Clone the repo and run `pod install` :beers:
