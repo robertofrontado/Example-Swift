@@ -42,10 +42,17 @@
 		A221628C1F0EEFCD00EAAF08 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221628B1F0EEFCD00EAAF08 /* DataModule.swift */; };
 		A221628E1F0EEFD700EAAF08 /* PresentationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221628D1F0EEFD700EAAF08 /* PresentationModule.swift */; };
 		A22162901F0EF10600EAAF08 /* UIStoryboard+getViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A221628F1F0EF10600EAAF08 /* UIStoryboard+getViewController.swift */; };
+		A23B1A671F10EB59002B8335 /* UIViewController+PopUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A661F10EB59002B8335 /* UIViewController+PopUpAnimation.swift */; };
+		A23B1A691F10F633002B8335 /* UITableView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A681F10F633002B8335 /* UITableView+Animations.swift */; };
+		A23B1A6B1F10F741002B8335 /* UINavigationController+PopCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A6A1F10F741002B8335 /* UINavigationController+PopCompletion.swift */; };
+		A23B1A6D1F10F9D7002B8335 /* UIAlertController+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A6C1F10F9D7002B8335 /* UIAlertController+Templates.swift */; };
+		A23B1A731F10FB30002B8335 /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23B1A6F1F10FB30002B8335 /* Checkout.storyboard */; };
+		A23B1A741F10FB30002B8335 /* CheckoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A701F10FB30002B8335 /* CheckoutPresenter.swift */; };
+		A23B1A751F10FB30002B8335 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A711F10FB30002B8335 /* CheckoutView.swift */; };
+		A23B1A761F10FB30002B8335 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A721F10FB30002B8335 /* CheckoutViewController.swift */; };
 		A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DB91F0EB77200055B2F /* AppDelegate.swift */; };
 		A2938DBF1F0EB77200055B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2938DBD1F0EB77200055B2F /* Main.storyboard */; };
 		A2938DC11F0EB77200055B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2938DC01F0EB77200055B2F /* Assets.xcassets */; };
-		A2938DC41F0EB77200055B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2938DC21F0EB77200055B2F /* LaunchScreen.storyboard */; };
 		A2938DDA1F0EB77200055B2F /* Example_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2938DD91F0EB77200055B2F /* Example_iOSUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -102,11 +109,18 @@
 		A221628B1F0EEFCD00EAAF08 /* DataModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
 		A221628D1F0EEFD700EAAF08 /* PresentationModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationModule.swift; sourceTree = "<group>"; };
 		A221628F1F0EF10600EAAF08 /* UIStoryboard+getViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+getViewController.swift"; sourceTree = "<group>"; };
+		A23B1A661F10EB59002B8335 /* UIViewController+PopUpAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PopUpAnimation.swift"; sourceTree = "<group>"; };
+		A23B1A681F10F633002B8335 /* UITableView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Animations.swift"; sourceTree = "<group>"; };
+		A23B1A6A1F10F741002B8335 /* UINavigationController+PopCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+PopCompletion.swift"; sourceTree = "<group>"; };
+		A23B1A6C1F10F9D7002B8335 /* UIAlertController+Templates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Templates.swift"; sourceTree = "<group>"; };
+		A23B1A6F1F10FB30002B8335 /* Checkout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Checkout.storyboard; sourceTree = "<group>"; };
+		A23B1A701F10FB30002B8335 /* CheckoutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutPresenter.swift; sourceTree = "<group>"; };
+		A23B1A711F10FB30002B8335 /* CheckoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		A23B1A721F10FB30002B8335 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		A2938DB61F0EB77200055B2F /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2938DB91F0EB77200055B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		A2938DB91F0EB77200055B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2938DBE1F0EB77200055B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2938DC01F0EB77200055B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A2938DC31F0EB77200055B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2938DC51F0EB77200055B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2938DCA1F0EB77200055B2F /* Example-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Example-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2938DD01F0EB77200055B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,13 +174,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A221624F1F0ED79B00EAAF08 /* PopUp */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PopUp;
-			sourceTree = "<group>";
-		};
 		A22162561F0ED90E00EAAF08 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +189,10 @@
 			children = (
 				A221625F1F0EDAE000EAAF08 /* UIApplication+TopViewController.swift */,
 				A221628F1F0EF10600EAAF08 /* UIStoryboard+getViewController.swift */,
+				A23B1A661F10EB59002B8335 /* UIViewController+PopUpAnimation.swift */,
+				A23B1A681F10F633002B8335 /* UITableView+Animations.swift */,
+				A23B1A6A1F10F741002B8335 /* UINavigationController+PopCompletion.swift */,
+				A23B1A6C1F10F9D7002B8335 /* UIAlertController+Templates.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -279,6 +290,17 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		A23B1A6E1F10FB30002B8335 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				A23B1A6F1F10FB30002B8335 /* Checkout.storyboard */,
+				A23B1A701F10FB30002B8335 /* CheckoutPresenter.swift */,
+				A23B1A711F10FB30002B8335 /* CheckoutView.swift */,
+				A23B1A721F10FB30002B8335 /* CheckoutViewController.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
 		A2938DAD1F0EB77200055B2F = {
 			isa = PBXGroup;
 			children = (
@@ -304,12 +326,12 @@
 		A2938DB81F0EB77200055B2F /* Example-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A2938DB91F0EB77200055B2F /* AppDelegate.swift */,
 				A22162881F0EEFA000EAAF08 /* DI */,
 				A2A105E31F0EC5BD00934F12 /* Data */,
 				A2A105E41F0EC5BD00934F12 /* Domain */,
 				A2A105E51F0EC5BD00934F12 /* Presentation */,
 				A2938DC01F0EB77200055B2F /* Assets.xcassets */,
-				A2938DC21F0EB77200055B2F /* LaunchScreen.storyboard */,
 				A2938DC51F0EB77200055B2F /* Info.plist */,
 			);
 			path = "Example-iOS";
@@ -355,11 +377,10 @@
 		A2A105E51F0EC5BD00934F12 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A2938DB91F0EB77200055B2F /* AppDelegate.swift */,
 				A22162561F0ED90E00EAAF08 /* Base */,
 				A221627D1F0EE48500EAAF08 /* Splash */,
 				A221624E1F0ED79B00EAAF08 /* Home */,
-				A221624F1F0ED79B00EAAF08 /* PopUp */,
+				A23B1A6E1F10FB30002B8335 /* Checkout */,
 				A221625E1F0EDA9500EAAF08 /* Wireframe */,
 				A221625D1F0EDA6700EAAF08 /* Utils */,
 			);
@@ -502,9 +523,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2938DC41F0EB77200055B2F /* LaunchScreen.storyboard in Resources */,
 				A2938DC11F0EB77200055B2F /* Assets.xcassets in Resources */,
 				A2938DBF1F0EB77200055B2F /* Main.storyboard in Resources */,
+				A23B1A731F10FB30002B8335 /* Checkout.storyboard in Resources */,
 				A22162641F0EDC2C00EAAF08 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,21 +647,28 @@
 				A221625A1F0ED92100EAAF08 /* BasePresenter.swift in Sources */,
 				A22162531F0ED8EB00EAAF08 /* HomePresenter.swift in Sources */,
 				A22162601F0EDAE000EAAF08 /* UIApplication+TopViewController.swift in Sources */,
+				A23B1A751F10FB30002B8335 /* CheckoutView.swift in Sources */,
+				A23B1A691F10F633002B8335 /* UITableView+Animations.swift in Sources */,
+				A23B1A671F10EB59002B8335 /* UIViewController+PopUpAnimation.swift in Sources */,
+				A23B1A741F10FB30002B8335 /* CheckoutPresenter.swift in Sources */,
 				A221628C1F0EEFCD00EAAF08 /* DataModule.swift in Sources */,
 				A22162471F0ECF6A00EAAF08 /* Item.swift in Sources */,
 				A22162851F0EE94E00EAAF08 /* Currency.swift in Sources */,
 				A22162581F0ED91800EAAF08 /* BaseViewController.swift in Sources */,
 				A22162551F0ED8F200EAAF08 /* HomeView.swift in Sources */,
+				A23B1A761F10FB30002B8335 /* CheckoutViewController.swift in Sources */,
 				A221626E1F0EDCCC00EAAF08 /* ItemsRepository.swift in Sources */,
 				A221626C1F0EDC9600EAAF08 /* BaseRepository.swift in Sources */,
 				A2048D411F103D8900C67238 /* HomeItemViewModel.swift in Sources */,
 				A2938DBA1F0EB77200055B2F /* AppDelegate.swift in Sources */,
+				A23B1A6D1F10F9D7002B8335 /* UIAlertController+Templates.swift in Sources */,
 				A221628E1F0EEFD700EAAF08 /* PresentationModule.swift in Sources */,
 				A221627F1F0EE49000EAAF08 /* SplashViewController.swift in Sources */,
 				A221625C1F0ED92700EAAF08 /* BaseView.swift in Sources */,
 				A22162831F0EE50D00EAAF08 /* WireframeImpl.swift in Sources */,
 				A2048D3F1F10363300C67238 /* HomeTableViewDataSource.swift in Sources */,
 				A22162701F0EDCD400EAAF08 /* CurrencyRepository.swift in Sources */,
+				A23B1A6B1F10F741002B8335 /* UINavigationController+PopCompletion.swift in Sources */,
 				A22162811F0EE4F500EAAF08 /* Wireframe.swift in Sources */,
 				A2048D3D1F10329D00C67238 /* HomeTableViewCell.swift in Sources */,
 				A221626A1F0EDC8600EAAF08 /* RestAPI.swift in Sources */,
@@ -697,14 +725,6 @@
 			);
 			name = Main.storyboard;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		A2938DC21F0EB77200055B2F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2938DC31F0EB77200055B2F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

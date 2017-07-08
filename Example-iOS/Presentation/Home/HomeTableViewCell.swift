@@ -14,8 +14,7 @@ class HomeTableViewCell: UITableViewCell, OkViewCell {
   @IBOutlet weak var priceLabel: UILabel!
   @IBOutlet weak var countLabel: UILabel!
 
-  var onItemAdded: ((_ item: Item) -> Void)?
-  var onItemRemoved: ((_ item: Item) -> Void)?
+  var onItemModified: ((_ item: HomeItemViewModel) -> Void)?
 
   internal var itemViewModel: HomeItemViewModel!
   
@@ -25,6 +24,7 @@ class HomeTableViewCell: UITableViewCell, OkViewCell {
     if let price = itemViewModel.item.price {
       priceLabel.text = "\(CurrencyType.USD.getSymbol()) \(price)"
     }
+    countLabel.text = "\(itemViewModel.amount)"
   }
 
   func itemAmountChanged(amount: Int) {
@@ -33,17 +33,16 @@ class HomeTableViewCell: UITableViewCell, OkViewCell {
       itemViewModel.amount = 0
     }
     countLabel.text = "\(itemViewModel.amount)"
+    onItemModified?(itemViewModel)
   }
 
   // MARK: - Actions
   @IBAction func itemAdded() {
     itemAmountChanged(amount: 1)
-    onItemAdded?(itemViewModel.item)
   }
 
   @IBAction func itemRemoved() {
     itemAmountChanged(amount: -1)
-    onItemRemoved?(itemViewModel.item)
   }
 
 }

@@ -12,9 +12,12 @@ protocol Wireframe {
   func home()
 
   // MARK: - Currency
-  func currencyPopUp()
+  func checkout(delegate: CheckoutViewControllerDelegate, price: Float, currency: Currency)
 
   // MARK: - Pop current screen
   func popCurrentScreen()
+  func popCurrentScreen(onCompletion: @escaping () -> Void)
+  func popCurrentScreen(animated: Bool)
+  func popCurrentScreen(animated: Bool, onCompletion: @escaping () -> Void)
 
 }

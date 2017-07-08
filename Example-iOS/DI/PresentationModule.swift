@@ -28,6 +28,11 @@ class PresentationModule {
     defaultContainer.register(HomePresenter.self) { r in
       HomePresenter(itemsRepository: r.resolve(ItemsRepository.self)!)
     }
+
+    // MARK: - Checkout
+    defaultContainer.register(CheckoutPresenter.self) { r in
+      CheckoutPresenter(currencyRepository: r.resolve(CurrencyRepository.self)!)
+    }
   }
 
   static func resolveViewControllers(_ defaultContainer: Container) {
@@ -45,5 +50,8 @@ class PresentationModule {
 
     // MARK: - Home
     register(vc: HomeViewController.self)
+
+    // MARK: - Checkout
+    register(vc: CheckoutViewController.self)
   }
 }

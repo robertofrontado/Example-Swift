@@ -10,10 +10,12 @@ import ObjectMapper
 
 struct Item: Mappable {
 
+  var id: Int?
   var name: String?
   var price: Float?
 
-  init(name: String, price: Float) {
+  init(id: Int, name: String, price: Float) {
+    self.id = id
     self.name = name
     self.price = price
   }
@@ -23,6 +25,7 @@ struct Item: Mappable {
   }
 
   mutating func mapping(map: Map) {
+    id <- map["id"]
     name <- map["name"]
     price <- map["price"]
   }

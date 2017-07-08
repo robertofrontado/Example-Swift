@@ -10,19 +10,16 @@ import OkDataSources
 
 class HomeTableViewDataSource: OkTableViewDataSource<HomeItemViewModel, HomeTableViewCell> {
 
-  var onItemAdded: ((_ item: Item) -> Void)?
-  var onItemRemoved: ((_ item: Item) -> Void)?
+  var onItemModified: ((_ item: HomeItemViewModel) -> Void)?
 
-  init(onItemAdded: ((_ item: Item) -> Void)?, onItemRemoved: ((_ item: Item) -> Void)?) {
-    self.onItemAdded = onItemAdded
-    self.onItemRemoved = onItemRemoved
+  init(onItemModified: ((_ item: HomeItemViewModel) -> Void)?) {
+    self.onItemModified = onItemModified
     super.init()
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = super.tableView(tableView, cellForRowAt: indexPath) as! HomeTableViewCell
-    cell.onItemAdded = onItemAdded
-    cell.onItemRemoved = onItemRemoved
+    cell.onItemModified = onItemModified
     return cell
   }
 

@@ -9,7 +9,7 @@
 import UIKit
 import OkDataSources
 
-class HomeViewController: BaseViewController<HomePresenter>, HomeView {
+class HomeViewController: BaseViewController<HomePresenter>, HomeView, CheckoutViewControllerDelegate {
 
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var checkoutBtn: UIButton!
@@ -18,21 +18,12 @@ class HomeViewController: BaseViewController<HomePresenter>, HomeView {
 
   var checkoutBtnHeight: CGFloat = 64
   var dataSource: HomeTableViewDataSource!
-  var itemsSelected = [Item]()
+  var homeItemViewModels = [HomeItemViewModel]()
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    dataSource = HomeTableViewDataSource(onItemAdded: { item in
-      self.itemsSelected.append(item)
-      self.updateCheckoutBtn()
-    }, onItemRemoved: { item in
-      for i in 0..<self.itemsSelected.count {
-        if item.name == self.itemsSelected[i].name {
-          self.itemsSelected.remove(at: i)
-          break
-        }
-      }
+    dataSource = HomeTableViewDataSource(onItemModified: { item in
       self.updateCheckoutBtn()
     })
 
@@ -42,27 +33,41 @@ class HomeViewController: BaseViewController<HomePresenter>, HomeView {
 
   // MARK: - HomeView
   func getItemsCompleted(items: [Item]) {
-    let homeItemViewModel = items.map { HomeItemViewModel(item: $0, amount: 0) }
-    dataSource.items = homeItemViewModel
-    tableView.reloadData()
+    homeItemViewModels = items.map { HomeItemViewModel(item: $0) }
+    dataSource.items = homeItemViewModels
+    tableView.reloadData(with: .automatic)
   }
 
   // MARK: - Private methods
   internal func updateCheckoutBtn() {
     let checkoutText = "Checkout: \(CurrencyType.USD.getSymbol()) \(getTotalPrice())"
     checkoutBtn.setTitle(checkoutText, for: .normal)
-    self.checkoutBtnHeightConstraint.constant = self.itemsSelected.count > 0 ? checkoutBtnHeight : 0
+    self.checkoutBtnHeightConstraint.constant = getTotalPrice() > 0 ? checkoutBtnHeight : 0
     UIView.animate(withDuration: 0.3, animations: {
       self.view.layoutIfNeeded()
     })
   }
 
   internal func getTotalPrice() -> Float {
-    return itemsSelected.reduce(0) { $0 + ($1.price ?? 0)}
+    let itemsPrice = homeItemViewModels.flatMap { ($0.item.price ?? 0) * Float($0.amount) }
+    return itemsPrice.reduce(0) { $0 + $1 }
   }
 
   // MARK: - Actions
   @IBAction func checkout() {
-    print("checkout")
+    // Checkout -> USD as default currency
+    wireframe.checkout(delegate: self, price: getTotalPrice(), currency: Currency(type: .USD, rate: 1))
+  }
+
+  // MARK: - CheckoutViewControllerDelegate
+  func onCheckoutCompleted() {
+    // Reset amount of each item
+    homeItemViewModels = homeItemViewModels.map {
+      $0.amount = 0
+      return $0
+    }
+    dataSource.items = homeItemViewModels
+    tableView.reloadData(with: .left)
+    updateCheckoutBtn()
   }
 }

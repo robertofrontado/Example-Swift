@@ -20,7 +20,9 @@ class HomePresenter: BasePresenter {
   }
 
   func getItems() {
+    self.view?.showLoading()
     itemsRepository.getItems { (items, error) in
+      self.view?.hideLoading()
       if let error = error {
         self.view?.showError(error: error)
         return

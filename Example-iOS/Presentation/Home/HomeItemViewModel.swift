@@ -6,9 +6,13 @@
 //  Copyright © 2017 Roberto Frontado. All rights reserved.
 //
 
-struct HomeItemViewModel {
+class HomeItemViewModel {
 
   let item: Item
   var amount = 0
+
+  init(item: Item) {
+    self.item = item
+  }
 
 }
