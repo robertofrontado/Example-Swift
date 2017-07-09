@@ -10,6 +10,8 @@ def shared_pods
   pod 'ObjectMapper'
   pod 'Alamofire', '~> 4.4'
   pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'RxSwift', '~> 3.0'
+  pod 'RxAlamofire'
 end
 
 target 'Example-iOS' do
