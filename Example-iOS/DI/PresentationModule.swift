@@ -7,12 +7,14 @@
 //
 
 import Swinject
+import RxSwift
 
 class PresentationModule {
 
   static func setup(_ defaultContainer: Container) {
 
     defaultContainer.register(Wireframe.self) { _ in WireframeImpl() }
+    defaultContainer.register(DisposeBag.self) { _ in DisposeBag() }
 
     resolvePresenters(defaultContainer)
     resolveViewControllers(defaultContainer)
@@ -21,17 +23,22 @@ class PresentationModule {
   static func resolvePresenters(_ defaultContainer: Container) {
 
     defaultContainer.register(BasePresenter.self) { r in
-      BasePresenter()
+      BasePresenter(disposeBag: r.resolve(DisposeBag.self)!,
+                    transformations: r.resolve(Transformations.self)!)
     }
 
     // MARK: - Home
     defaultContainer.register(HomePresenter.self) { r in
-      HomePresenter(itemsRepository: r.resolve(ItemsRepository.self)!)
+      HomePresenter(disposeBag: r.resolve(DisposeBag.self)!,
+                    transformations: r.resolve(Transformations.self)!,
+                    itemsRepository: r.resolve(ItemsRepository.self)!)
     }
 
     // MARK: - Checkout
     defaultContainer.register(CheckoutPresenter.self) { r in
-      CheckoutPresenter(currencyRepository: r.resolve(CurrencyRepository.self)!)
+      CheckoutPresenter(disposeBag: r.resolve(DisposeBag.self)!,
+                        transformations: r.resolve(Transformations.self)!,
+                        currencyRepository: r.resolve(CurrencyRepository.self)!)
     }
   }
 

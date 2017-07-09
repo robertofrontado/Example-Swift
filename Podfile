@@ -8,10 +8,9 @@ def shared_pods
   pod 'OkDataSources'
   pod 'PKHUD', '~> 4.0'
   pod 'ObjectMapper'
-  pod 'Alamofire', '~> 4.4'
-  pod 'AlamofireObjectMapper', '~> 4.0'
   pod 'RxSwift', '~> 3.0'
-  pod 'RxAlamofire'
+  pod 'Moya/RxSwift'
+  pod 'Moya-ObjectMapper/RxSwift'
 end
 
 target 'Example-iOS' do

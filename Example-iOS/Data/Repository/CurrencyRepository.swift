@@ -6,14 +6,25 @@
 //  Copyright © 2017 Roberto Frontado. All rights reserved.
 //
 
-class CurrencyRepository: BaseRepository {
+import RxSwift
+import Moya
+import Moya_ObjectMapper
 
-  override init(api: API) {
-    super.init(api: api)
+class CurrencyRepository: BaseRepository<API> {
+
+  override init(api: RxMoyaProvider<API>, transformations: Transformations) {
+    super.init(api: api, transformations: transformations)
   }
 
-  func getCurrencyRate(fromCurrency: CurrencyType, toCurrency: CurrencyType, onCompletion: @escaping (_ currency: Currency?, _ error: Error?) -> Void) {
-    api.getCurrencyRate(fromCurrency: fromCurrency, toCurrency: toCurrency, onCompletion: onCompletion)
+  func getCurrencyRate(fromCurrency: CurrencyType, toCurrency: CurrencyType) -> Observable<Currency> {
+    return api.request(.getCurrencyRate(fromCurrency: fromCurrency, toCurrency: toCurrency))
+      .compose(transformations.handleError())
+      .mapObject(Currency.self)
+      .map { currency in
+        var currency = currency
+        currency.type = toCurrency
+        return currency
+      }
   }
 
 }

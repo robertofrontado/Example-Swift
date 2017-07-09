@@ -12,6 +12,7 @@ extension SwinjectStoryboard {
 
   class func setup() {
     DataModule.setup(defaultContainer)
+    DomainModule.setup(defaultContainer)
     PresentationModule.setup(defaultContainer)
   }
   

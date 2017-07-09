@@ -6,12 +6,16 @@
 //  Copyright © 2017 Roberto Frontado. All rights reserved.
 //
 
-class BaseRepository {
+import Moya
 
-  internal let api: API
+class BaseRepository<T: TargetType> {
 
-  init(api: API) {
+  internal let api: RxMoyaProvider<T>
+  internal let transformations: Transformations
+
+  init(api: RxMoyaProvider<T>, transformations: Transformations) {
     self.api = api
+    self.transformations = transformations
   }
-
+  
 }

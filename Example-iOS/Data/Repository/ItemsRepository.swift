@@ -6,14 +6,20 @@
 //  Copyright © 2017 Roberto Frontado. All rights reserved.
 //
 
-class ItemsRepository: BaseRepository {
+import RxSwift
+import Moya
+import Moya_ObjectMapper
 
-  override init(api: API) {
-    super.init(api: api)
+class ItemsRepository: BaseRepository<API> {
+
+  override init(api: RxMoyaProvider<API>, transformations: Transformations) {
+    super.init(api: api, transformations: transformations)
   }
 
-  func getItems(onCompletion: @escaping (_ items: [Item], _ error: Error?) -> Void) {
-    api.getItems(onCompletion: onCompletion)
+  func getItems() -> Observable<[Item]> {
+    return api.request(.getItems())
+      .compose(transformations.handleError())
+      .mapArray(Item.self)
   }
   
 }
