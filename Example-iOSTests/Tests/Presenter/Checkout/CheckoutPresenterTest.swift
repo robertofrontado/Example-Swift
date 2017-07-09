@@ -8,6 +8,7 @@
 
 import Quick
 import Nimble
+import RxSwift
 @testable import Example_iOS
 
 class CheckoutPresenterTest: QuickSpec {
@@ -16,24 +17,22 @@ class CheckoutPresenterTest: QuickSpec {
     describe("CheckoutPresenter Test") {
       var mockCurrencyRepository: MockCurrencyRepository!
       var mockView: MockCheckoutView!
+      var mockTransformations: MockTransformations!
+      var disposeBag: DisposeBag!
       var checkoutPresenter: CheckoutPresenter!
 
       beforeEach {
         mockCurrencyRepository = MockCurrencyRepository()
         mockView = MockCheckoutView()
-        checkoutPresenter = CheckoutPresenter(currencyRepository: mockCurrencyRepository)
+        disposeBag = DisposeBag()
+        mockTransformations = MockTransformations()
+        checkoutPresenter = CheckoutPresenter(disposeBag: disposeBag, transformations: mockTransformations, currencyRepository: mockCurrencyRepository)
         checkoutPresenter.attachView(view: mockView)
       }
 
       it("Should call getCurrencyRateSuccessful when getCurrencyRate is triggered") {
         checkoutPresenter.getCurrencyRate(fromCurrency: .USD, toCurrency: .EUR)
         expect(mockView.getCurrencyRateSuccessfulCalled).to(beTrue())
-      }
-
-      it("Should call showError error if getCurrencyRate fails") {
-        mockCurrencyRepository.statusCode = 401
-        checkoutPresenter.getCurrencyRate(fromCurrency: .USD, toCurrency: .EUR)
-        expect(mockView.showErrorCalled).to(beTrue())
       }
 
       it("Should call showError error if fromCurrency or toCurrency are nil") {

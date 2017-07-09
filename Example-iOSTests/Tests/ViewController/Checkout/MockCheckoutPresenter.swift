@@ -6,6 +6,7 @@
 //  Copyright © 2017 Roberto Frontado. All rights reserved.
 //
 
+import RxSwift
 @testable import Example_iOS
 
 class MockCheckoutPresenter: CheckoutPresenter {
@@ -13,7 +14,7 @@ class MockCheckoutPresenter: CheckoutPresenter {
   var getCurrencyRateCalled = false
 
   init() {
-    super.init(currencyRepository: MockCurrencyRepository())
+    super.init(disposeBag: DisposeBag(), transformations: MockTransformations(), currencyRepository: MockCurrencyRepository())
   }
 
   override func getCurrencyRate(fromCurrency: CurrencyType?, toCurrency: CurrencyType?) {

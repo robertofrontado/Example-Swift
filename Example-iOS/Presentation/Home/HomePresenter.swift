@@ -23,9 +23,9 @@ class HomePresenter: BasePresenter {
 
   func getItems() {
     itemsRepository.getItems()
-      .compose(TransformationsBehavior().safely())
-      .compose(TransformationsBehavior().loading(view: self.view))
-      .compose(TransformationsBehavior().reportError(view: self.view))
+      .compose(transformations.safely())
+      .compose(transformations.loading(view: self.view))
+      .compose(transformations.reportError(view: self.view))
       .subscribe(onNext: { items in
         self.view?.getItemsSuccesful(items: items)
       }).addDisposableTo(disposeBag)

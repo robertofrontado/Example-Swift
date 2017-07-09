@@ -8,6 +8,7 @@
 
 import Quick
 import Nimble
+import RxSwift
 @testable import Example_iOS
 
 class HomePresenterTest: QuickSpec {
@@ -16,24 +17,22 @@ class HomePresenterTest: QuickSpec {
     describe("HomePresenter Test") {
       var mockItemsRepository: MockItemsRepository!
       var mockView: MockHomeView!
+      var disposeBag: DisposeBag!
+      var mockTransformations: MockTransformations!
       var homePresenter: HomePresenter!
 
       beforeEach {
         mockItemsRepository = MockItemsRepository()
         mockView = MockHomeView()
-        homePresenter = HomePresenter(itemsRepository: mockItemsRepository)
+        disposeBag = DisposeBag()
+        mockTransformations = MockTransformations()
+        homePresenter = HomePresenter(disposeBag: disposeBag, transformations: mockTransformations, itemsRepository: mockItemsRepository)
         homePresenter.attachView(view: mockView)
       }
 
       it("Should call getItemsSuccesful when getItems is triggered") {
         homePresenter.getItems()
         expect(mockView.getItemsSuccesfulCalled).to(beTrue())
-      }
-
-      it("Should call showError error if getItems fails") {
-        mockItemsRepository.statusCode = 401
-        homePresenter.getItems()
-        expect(mockView.showErrorCalled).to(beTrue())
       }
     }
   }

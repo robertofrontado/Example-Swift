@@ -20,6 +20,7 @@
 		A219D5B81F12BEA800C9B883 /* TransformationsBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219D5B41F12BEA800C9B883 /* TransformationsBehavior.swift */; };
 		A219D5B91F12BEA800C9B883 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219D5B51F12BEA800C9B883 /* Transformer.swift */; };
 		A219D5BD1F12C07300C9B883 /* DomainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219D5BC1F12C07300C9B883 /* DomainModule.swift */; };
+		A219D5BF1F12C5AD00C9B883 /* MockTransformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219D5BE1F12C5AD00C9B883 /* MockTransformations.swift */; };
 		A22162511F0ED8E400EAAF08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162501F0ED8E400EAAF08 /* HomeViewController.swift */; };
 		A22162531F0ED8EB00EAAF08 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162521F0ED8EB00EAAF08 /* HomePresenter.swift */; };
 		A22162551F0ED8F200EAAF08 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22162541F0ED8F200EAAF08 /* HomeView.swift */; };
@@ -52,7 +53,6 @@
 		A23B1A7C1F10FD89002B8335 /* MockHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A7A1F10FD89002B8335 /* MockHomeView.swift */; };
 		A23B1A7E1F10FD96002B8335 /* CheckoutPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A7D1F10FD96002B8335 /* CheckoutPresenterTest.swift */; };
 		A23B1A801F10FDA2002B8335 /* MockCheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A7F1F10FDA2002B8335 /* MockCheckoutView.swift */; };
-		A23B1A861F10FDB5002B8335 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A821F10FDB5002B8335 /* MockAPI.swift */; };
 		A23B1A871F10FDB5002B8335 /* MockBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A831F10FDB5002B8335 /* MockBaseView.swift */; };
 		A23B1A881F10FDB5002B8335 /* MockItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A841F10FDB5002B8335 /* MockItemsRepository.swift */; };
 		A23B1A891F10FDB5002B8335 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B1A851F10FDB5002B8335 /* Mocks.swift */; };
@@ -105,6 +105,7 @@
 		A219D5B41F12BEA800C9B883 /* TransformationsBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformationsBehavior.swift; sourceTree = "<group>"; };
 		A219D5B51F12BEA800C9B883 /* Transformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
 		A219D5BC1F12C07300C9B883 /* DomainModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainModule.swift; sourceTree = "<group>"; };
+		A219D5BE1F12C5AD00C9B883 /* MockTransformations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTransformations.swift; sourceTree = "<group>"; };
 		A22162501F0ED8E400EAAF08 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A22162521F0ED8EB00EAAF08 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		A22162541F0ED8F200EAAF08 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -137,7 +138,6 @@
 		A23B1A7A1F10FD89002B8335 /* MockHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeView.swift; sourceTree = "<group>"; };
 		A23B1A7D1F10FD96002B8335 /* CheckoutPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutPresenterTest.swift; sourceTree = "<group>"; };
 		A23B1A7F1F10FDA2002B8335 /* MockCheckoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCheckoutView.swift; sourceTree = "<group>"; };
-		A23B1A821F10FDB5002B8335 /* MockAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		A23B1A831F10FDB5002B8335 /* MockBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockBaseView.swift; sourceTree = "<group>"; };
 		A23B1A841F10FDB5002B8335 /* MockItemsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockItemsRepository.swift; sourceTree = "<group>"; };
 		A23B1A851F10FDB5002B8335 /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
@@ -371,12 +371,12 @@
 			isa = PBXGroup;
 			children = (
 				A23B1A851F10FDB5002B8335 /* Mocks.swift */,
-				A23B1A821F10FDB5002B8335 /* MockAPI.swift */,
 				A23B1A831F10FDB5002B8335 /* MockBaseView.swift */,
 				A23B1A921F11716F002B8335 /* MockWireframe.swift */,
 				A23B1A841F10FDB5002B8335 /* MockItemsRepository.swift */,
 				A23B1A8A1F10FDDF002B8335 /* MockCurrencyRepository.swift */,
 				A23B1A901F117109002B8335 /* UIViewController+PreloadView.swift */,
+				A219D5BE1F12C5AD00C9B883 /* MockTransformations.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -795,7 +795,6 @@
 				A23B1A931F11716F002B8335 /* MockWireframe.swift in Sources */,
 				A23B1A801F10FDA2002B8335 /* MockCheckoutView.swift in Sources */,
 				A23B1A7C1F10FD89002B8335 /* MockHomeView.swift in Sources */,
-				A23B1A861F10FDB5002B8335 /* MockAPI.swift in Sources */,
 				A23B1A7B1F10FD89002B8335 /* HomePresenterTest.swift in Sources */,
 				A221627C1F0EDF1500EAAF08 /* ItemsRepositoryTest.swift in Sources */,
 				A2991B581F11781F00396AFB /* MockCheckoutPresenter.swift in Sources */,
@@ -809,6 +808,7 @@
 				A23B1A881F10FDB5002B8335 /* MockItemsRepository.swift in Sources */,
 				A2991B5A1F11789C00396AFB /* MockCheckoutViewControllerDelegate.swift in Sources */,
 				A23B1A911F117109002B8335 /* UIViewController+PreloadView.swift in Sources */,
+				A219D5BF1F12C5AD00C9B883 /* MockTransformations.swift in Sources */,
 				A2991B531F1177FF00396AFB /* HomeViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,24 +6,17 @@
 //  Copyright © 2017 Roberto Frontado. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+import Moya
 @testable import Example_iOS
 
 class MockCurrencyRepository: CurrencyRepository {
 
-  var statusCode: Int = 200
-
-  var error: Error? {
-    let error = NSError(domain: "", code: statusCode, userInfo: nil)
-    return statusCode >= 400 ? error : nil
-  }
-
   init() {
-    super.init(api: MockAPI())
+    super.init(api: RxMoyaProvider(stubClosure: MoyaProvider.immediatelyStub), transformations: MockTransformations())
   }
 
-  override func getCurrencyRate(fromCurrency: CurrencyType, toCurrency: CurrencyType, onCompletion: @escaping (Currency?, Error?) -> Void) {
-    let currency = error == nil ? Mocks.getCurrencyEUR() : nil
-    onCompletion(currency, error)
+  override func getCurrencyRate(fromCurrency: CurrencyType, toCurrency: CurrencyType) -> Observable<Currency> {
+      return Observable.just(Mocks.getCurrencyEUR())
   }
 }

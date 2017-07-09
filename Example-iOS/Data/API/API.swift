@@ -8,12 +8,11 @@
 
 import Moya
 
-enum API {
+enum API: TargetType {
   case getItems()
   case getCurrencyRate(fromCurrency: CurrencyType, toCurrency: CurrencyType)
-}
 
-extension API: TargetType {
+  // MARK: - TargetType
   var baseURL: URL {
     switch self {
     case .getItems:

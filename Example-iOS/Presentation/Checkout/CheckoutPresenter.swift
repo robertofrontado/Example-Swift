@@ -29,9 +29,9 @@ class CheckoutPresenter: BasePresenter {
     }
 
     currencyRepository.getCurrencyRate(fromCurrency: fromCurrency, toCurrency: toCurrency)
-      .compose(TransformationsBehavior().safely())
-      .compose(TransformationsBehavior().loading(view: self.view))
-      .compose(TransformationsBehavior().reportError(view: self.view))
+      .compose(transformations.safely())
+      .compose(transformations.loading(view: self.view))
+      .compose(transformations.reportError(view: self.view))
       .subscribe(onNext: { currency in
         self.view?.getCurrencyRateSuccessful(currency: currency)
       }).addDisposableTo(disposeBag)
